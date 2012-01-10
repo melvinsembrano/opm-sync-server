@@ -1,6 +1,7 @@
 Opm::Application.routes.draw do
   get "patches/nearest"
   post "patches/find"
+  get "patches/find"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -1,12 +1,12 @@
-<h1>Search nearest</h1>
-<%= form_tag "/patches/find" do %>
+<h1>Search nearest restaurant</h1>
+<%= form_tag "/patches/find.json" do %>
   <div>
     <%= label_tag "lat", "Latitude" %>
-    <%= text_field_tag "lat" %>
+    <%= text_field_tag "lat", @lat %>
   </div>
   <div>
     <%= label_tag "lng", "Longitude" %>
-    <%= text_field_tag "lng" %>
+    <%= text_field_tag "lng", @lng %>
  </div>
  <div>
     <%= submit_tag "Search" %>
